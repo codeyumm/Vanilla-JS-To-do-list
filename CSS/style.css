@@ -1,22 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,700&display=swap');
+
 /* removing default margin and padding */
 *{
     margin: 0px;
     padding: 0px;
 }
 
-
 /* style for body */
 body{
-    background: #556270;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(132deg, rgb(255, 206, 236) 0.00%, rgb(151, 150, 240) 100.00%);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+html {min-height: 100%; }
+
+body {min-height: 100%; }
 
 /* style for tasks container */
 #todo-task-container{
-    display: none;
+
 }
 
+#todo-task-container h2{
+  margin: 12px;
+}
 
+#todo-task-container div{
+  display: flex;
+  gap: 16px;
+}
+
+#todo-item{
+    width: 220px;
+    padding: 12px;
+    border-radius: 24px;
+    border: none;
+    border: 4px solid transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+#todo-item:focus{
+    border: 4px solid rgb(151, 150, 240);
+    outline: none;
+}
+
+button{
+    padding: 16px 24px;
+    border-radius: 16px;
+}
+
+.container{
+    width: 600px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
 
 
