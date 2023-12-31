@@ -36,7 +36,7 @@ This application allows users to create a list of tasks they need to accomplish.
 ## Future improvments
 
 - Edit functionality
-- Seprate display for completed task and not completed task.
+- Separate display for completed task and not completed task.
 
 ## Contribution
 
