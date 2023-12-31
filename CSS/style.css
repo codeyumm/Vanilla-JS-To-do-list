@@ -20,7 +20,11 @@ body {min-height: 100%; }
 
 /* style for tasks container */
 #todo-task-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
+  font-size: 22px;
 }
 
 #todo-task-container h2{
@@ -29,12 +33,13 @@ body {min-height: 100%; }
 
 #todo-task-container div{
   display: flex;
-  gap: 32px;
+  min-width: 300px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #todo-task-container p{
-  min-width: 160px;
-
+  min-width: 170px;
 }
 
 .add-item-container{
@@ -62,7 +67,7 @@ body {min-height: 100%; }
     outline: none;
 }
 
-button{
+.add-item-container button{
     padding: 16px 24px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -73,7 +78,7 @@ button{
 
 }
 
-button:hover{
+.add-item-container button:hover{
   color: black;
 
 }
@@ -107,8 +112,14 @@ button:hover{
 .delete-icon{
   height: 24px;
   width: 24px;
+  margin-top: 4px;
 }
 
+.delete-icon:hover{
+  box-shadow:  0 0 0 4px #ff6666;
+  border-radius: 32px;
+  cursor: pointer;
+}
 
 input[type="checkbox"] {
   appearance: none;
@@ -122,11 +133,12 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:hover {
   background-color: #ccc;
+  cursor: pointer;
 }
 
 
 input[type="checkbox"]:checked {
-  background-color: #3498db;
+  background-color: #77dd77;
 
 }
 
